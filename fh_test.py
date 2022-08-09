@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
 
     try:
-        data = pd.read_csv(r"C:\Users\sachi\OneDrive\Documents\Reflections Infos\Project\ML_Flow\Fetal health\fetal_health.csv")
+        data = pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fetal_health.csv"))
     except Exception as e:
         logger.exception(
             "Unable to download training & test CSV, check your internet connection. Error: %s", e
