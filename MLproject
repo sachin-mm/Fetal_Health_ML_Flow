@@ -1,0 +1,10 @@
+name: tutorial
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      ne: int
+      md: int
+    command: "python fh_test.py {ne} {md}"
